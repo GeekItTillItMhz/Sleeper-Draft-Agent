@@ -22,7 +22,7 @@ cd Sleeper-Draft-Agent
 **2. Create a Virtual Environment (Recommended):**
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate.ps1 [Powershell] .venv\Scripts\activate.bat [CMD]
 ```
 
 **3. Install Dependencies:**
@@ -71,7 +71,7 @@ Users familiar with training RL models may also want to tune hyperparameters and
 Once your configuration is set, run the training script from the project root directory:
 
 ```bash
-python src/train.py
+python -m src.train
 ```
 
 - The script will automatically launch **TensorBoard** for live monitoring. Open `http://localhost:6006` in your browser to view training progress (Reward, Loss, etc.).
@@ -91,7 +91,7 @@ Before you can use the dashboard, you need the ID for your Sleeper draft.
 Run the dashboard application from the project root directory:
 
 ```bash
-python app/dashboard.py
+python -m app.dashboard
 ```
 
 1.  Open `http://127.0.0.1:8050/` in your browser.
