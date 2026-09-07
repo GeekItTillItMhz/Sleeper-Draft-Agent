@@ -5,7 +5,7 @@ This module initializes the PPO based drafting agents.
 import torch
 import torch.nn as nn
 
-from src import config
+from . import config
 
 class DraftAgent(nn.Module):
     """
