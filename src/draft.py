@@ -5,8 +5,8 @@ This module initializes the drafting simulation environment used for model train
 import polars as pl
 import torch
 
-from board import create_board
-from src import config
+from .board import create_board
+from . import config
 
 class DraftSimulator:
     """
