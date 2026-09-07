@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 # --- Other Imports ---
-import config
+# import config
 import pandas as pd
 import os
 import functools
@@ -21,6 +21,7 @@ import time
 import re
 
 from .sleeper import SleeperDraftManager, get_draft_metadata
+from src import config
 
 # --- Configure Logging ---
 logging.basicConfig(
