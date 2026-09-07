@@ -8,9 +8,9 @@ import os
 import sys
 import re
 
-from src import config
-from src.draft import DraftSimulator
-from src.agent import DraftAgent
+from . import config
+from .draft import DraftSimulator
+from .agent import DraftAgent
 
 def run_test_draft(model_path):
     """
