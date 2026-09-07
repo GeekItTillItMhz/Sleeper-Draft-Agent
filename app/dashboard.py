@@ -20,7 +20,7 @@ import functools
 import time
 import re
 
-from app.sleeper import SleeperDraftManager, get_draft_metadata
+from .sleeper import SleeperDraftManager, get_draft_metadata
 
 # --- Configure Logging ---
 logging.basicConfig(
