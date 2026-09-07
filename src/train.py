@@ -28,11 +28,11 @@ from datetime import datetime
 from functools import partial
 from collections import deque
 
-from draft import DraftSimulator
-from agent import DraftAgent
-from vectorize import VectorizedDraftSimulator
-from test import run_test_draft
-from src import config
+from .draft import DraftSimulator
+from .agent import DraftAgent
+from .vectorize import VectorizedDraftSimulator
+from .test import run_test_draft
+from . import config
 
 # --- Path Configuration ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
